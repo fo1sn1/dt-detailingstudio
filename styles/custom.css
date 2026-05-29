@@ -1,0 +1,43 @@
+/* Custom overrides for layout and responsiveness */
+:root{
+  --container-max:1200px;
+  --gap:24px;
+  --bg:#0b0b0b;
+  --fg:#eee;
+  --brand:#0ea5ff;
+  --container-padding:16px;
+}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+.container{max-width:var(--container-max);margin:0 auto;padding:0 var(--container-padding)}
+.site-header{background:transparent;padding:12px 0;position:sticky;top:0;z-index:50}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.brand .logo{height:56px;width:auto;display:block}
+.main-nav{display:flex;gap:18px;align-items:center}
+.main-nav a{color:var(--fg);text-decoration:none;padding:8px 6px;border-radius:6px;font-weight:600}
+.main-nav a:hover{background:rgba(255,255,255,0.03)}
+.phone{background:var(--brand);color:#022; padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
+.hero{position:relative;display:flex;align-items:center;justify-content:center;padding:36px 0}
+.hero-image{width:100%;height:auto;max-height:640px;object-fit:cover;border-radius:8px;display:block}
+.hero-content{position:absolute;left:48px;top:48px;color:var(--fg);text-shadow:0 2px 8px rgba(0,0,0,0.6)}
+.hero-content h1{font-size:36px;margin:0 0 8px}
+.hero-content p{margin:0;font-size:18px;max-width:520px}
+.services,.gallery,.reviews,.contact{padding:48px 0}
+.services h2,.gallery h2,.reviews h2,.contact h2{margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid img{width:100%;height:320px;object-fit:cover;border-radius:6px}
+.site-footer{padding:28px 0;color:#bdbdbd;font-size:14px}
+/* Responsive */
+@media (max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .hero-image{max-height:480px}
+  .hero-content{left:20px;top:20px}
+  .hero-content h1{font-size:28px}
+}
+@media (max-width:600px){
+  .main-nav{display:none}
+  .grid{grid-template-columns:1fr}
+  .grid img{height:220px}
+  .brand .logo{height:48px}
+  .hero-content{position:static;padding:16px;background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.6));border-radius:8px;margin-top:-120px}
+}
