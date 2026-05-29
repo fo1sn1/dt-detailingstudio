@@ -1,37 +1,3 @@
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preload" as="image" href="./images/logo-B5c5AiZe.png">
-<link rel="preload" as="image" href="./images/hero-CMNJ6Tn.jpg">
-<link rel="stylesheet" href="./styles/styles-CA-1LR1X.css" data-precedence="default">
-<title>DT Detailing Studio – Prémiové detailování aut v Českém Těšíně</title>
-<meta name="description" content="Renovace laku, keramická ochrana, hloubkové čištění interiéru a renovace světlometů. Mlýnská 942/13, Český Těšín.">
-<meta property="og:title" content="DT Detailing Studio – Prémiové detailování aut, Český Těšín">
-<meta property="og:description" content="Profesionální renovace laku, leštění, keramická ochrana, čištění interiérů a renovace světlometů v Českém Těšíně.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="./images/hero-CMNJ6Tn.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DT Detailing Studio – Prémiové detailování aut, Český Těšín">
-<meta name="twitter:description" content="Profesionální renovace laku, leštění, keramická ochrana, čištění interiérů a renovace světlometů v Českém Těšíně.">
-<meta name="twitter:image" content="./images/hero-CMNJ6Tn.jpg">
-<link rel="icon" href="./images/logo-B5c5AiZe.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "DT Detailing Studio",
-  "image": ["./images/logo-B5c5AiZe.png"],
-  "telephone": "+420799019440",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Mlýnská 942/13",
-    "addressLocality": "Český Těšín",
-    "addressCountry": "CZ"
-  },
 <!doctype html>
 <html lang="cs">
 <head>
@@ -83,7 +49,7 @@
 			<h2>Služby</h2>
 			<ul>
 				<li>Renovace laku a leštění</li>
-				<li>Kemická ochrana (ceramic coating)</li>
+				<li>Keramická ochrana (ceramic coating)</li>
 				<li>Hloubkové čištění interiérů</li>
 				<li>Renovace světlometů</li>
 			</ul>
@@ -108,7 +74,7 @@
 
 		<section id="contact" class="container contact">
 			<h2>Kontakt</h2>
-			<p>Adres: Mlýnská 942/13, Český Těšín</p>
+			<p>Adresa: Mlýnská 942/13, Český Těšín</p>
 			<p>Telefon: <a href="tel:+420799019440">799 019 440</a></p>
 			<form id="contact-form" action="#" method="post">
 				<label for="name">Jméno</label>
@@ -124,12 +90,15 @@
 
 	<footer class="site-footer">
 		<div class="container">
-			<p>&copy; {new Date().getFullYear()} DT Detailing Studio — Mlýnská 942/13, Český Těšín</p>
+			<p>&copy; <span id="year"></span> DT Detailing Studio — Mlýnská 942/13, Český Těšín</p>
 		</div>
 	</footer>
 
 	<script src="./scripts/flock.js" defer></script>
 	<script>
+		// Render current year
+		document.getElementById('year').textContent = new Date().getFullYear();
+
 		// Basic client-side form handling (no external services)
 		document.getElementById('contact-form')?.addEventListener('submit', function(e){
 			e.preventDefault();
@@ -138,5 +107,4 @@
 		});
 	</script>
 </body>
-</html>
 </html>
