@@ -41,23 +41,35 @@
 		<section id="top" class="hero">
 			<img src="./images/hero-CMNJ6Tn.jpg" alt="Detailing studio" class="hero-image">
 			<div class="hero-content">
-				<h1>DT Detailing Studio</h1>
-				<p>Prémiové detailování aut v Českém Těšíně — renovace laku, keramická ochrana, čištění interiérů.</p>
+				<h1>Prémiová péče o váš vůz <span class="accent">v Českém Těšíně</span></h1>
+				<p>Profesionální renovace laku, leštění, ochrana povrchů a hloubkové čištění interiérů se smyslem pro detail. Garantujeme špičkový výsledek.</p>
+				<div style="margin-top:18px;display:flex;gap:12px">
+					<a href="#contact" class="phone" style="padding:12px 18px;">Chci nezávaznou nabídku</a>
+					<a href="#services" style="padding:12px 18px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--fg);text-decoration:none;font-weight:700">Naše služby</a>
+				</div>
 			</div>
 		</section>
 
 		<section id="services" class="container services">
-			<h2>Služby</h2>
-			<ul>
-				<li>Renovace laku a leštění</li>
-				<li>Keramická ochrana (ceramic coating)</li>
-				<li>Hloubkové čištění interiérů</li>
-				<li>Renovace světlometů</li>
-			</ul>
+			<h2>Specializované detailování</h2>
+			<div class="cards">
+				<div class="card">
+					<h3>Hloubkové čištění interiérů</h3>
+					<p>Kompletní tepování, odstranění skvrn po dětech, ošetření plastů/kůže a dlouhotrvající provonění interiéru.</p>
+				</div>
+				<div class="card">
+					<h3>Renovace světlometů</h3>
+					<p>Profesionální rozleštění a vyčištění zašlých světlometů. Světlomety budou opět zářit a vypadat jako nové.</p>
+				</div>
+				<div class="card">
+					<h3>Keramická ochrana &amp; leštění laku</h3>
+					<p>Odstranění škrábanců, obnovení hlubokého lesku karoserie a aplikace dlouhodobé hydrofobní ochrany.</p>
+				</div>
+			</div>
 		</section>
 
 		<section id="gallery" class="container gallery">
-			<h2>Naše práce</h2>
+			<h2>Naše nejlepší práce</h2>
 			<div class="grid">
 				<img src="./images/work1-CL03Gbp3.jpg" alt="Práce 1">
 				<img src="./images/work2-DcpU93Oi.jpg" alt="Práce 2">
@@ -74,18 +86,36 @@
 		</section>
 
 		<section id="contact" class="container contact">
-			<h2>Kontakt</h2>
-			<p>Adresa: Mlýnská 942/13, Český Těšín</p>
-			<p>Telefon: <a href="tel:+420799019440">799 019 440</a></p>
-			<form id="contact-form" action="#" method="post">
-				<label for="name">Jméno</label>
-				<input id="name" name="name" required>
-				<label for="email">E-mail</label>
-				<input id="email" name="email" type="email" required>
-				<label for="message">Zpráva</label>
-				<textarea id="message" name="message" rows="4" required></textarea>
-				<button type="submit">Odeslat</button>
-			</form>
+			<h2>Domluvte si nezávaznou nabídku</h2>
+			<div class="contact-grid">
+				<div class="contact-form">
+					<form id="contact-form" action="#" method="post">
+						<label for="name">Jméno</label>
+						<input id="name" name="name" required>
+						<label for="email">E-mail</label>
+						<input id="email" name="email" type="email" required>
+						<label for="phone">Telefon</label>
+						<input id="phone" name="phone" type="tel">
+						<label for="message">Zpráva</label>
+						<textarea id="message" name="message" rows="6" required></textarea>
+						<button type="submit">Odeslat poptávku</button>
+					</form>
+				</div>
+				<div class="contact-info">
+					<div class="info-card">
+						<strong>Adresa</strong>
+						<p>Mlýnská 942/13<br>737 01 Český Těšín</p>
+					</div>
+					<div class="info-card">
+						<strong>Telefon</strong>
+						<p><a href="tel:+420799019440">799 019 440</a></p>
+					</div>
+					<div class="info-card">
+						<strong>Otevírací doba</strong>
+						<p>Po–Pá: 8:00 – 17:00<br>So: dle dohody</p>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 
